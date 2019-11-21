@@ -1,6 +1,7 @@
 node{
-checkout scm
-def c=load “${pwd()}/common.groovy”
+//checkout scm
+def rootDir = pwd()
+def c=load “${rootDir}@script/common.groovy”
 c.mycommoncode()
 println "Hello World!"
 }
