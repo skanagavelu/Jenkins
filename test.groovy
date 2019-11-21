@@ -1,7 +1,15 @@
 node{
-//checkout scm
+checkout scm
+  // To know files are checked out or not
+    sh '''
+        ls -lhrt
+    '''
+
 def rootDir = pwd()
-def c=load “${rootDir}@script/common.groovy”
+    println("Current Directory: " + rootDir)
+
+
+def c = load “${rootDir}/common.groovy”
 c.mycommoncode()
 println "Hello World!"
 }
