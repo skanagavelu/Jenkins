@@ -2,7 +2,7 @@
 def script = new GroovyScriptEngine( '.' ).with {
   loadScriptByName( 'common.groovy' )
 } 
-this.metaClass.mixin script
+metaClass.mixin script
 
 pipeline {
     agent any
