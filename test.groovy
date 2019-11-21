@@ -42,9 +42,9 @@ pipeline {
          }
          stage('final stage sequential') {
              steps {
-                 script {
-                     echo "The complete run!"
-                 }
+//                 script {
+  //                   echo "The complete run!"
+    //             }
              }
          }
      }
