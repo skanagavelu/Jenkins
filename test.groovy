@@ -1,3 +1,5 @@
+evaluate(new File("common.groovy"))
+
 pipeline {
     agent any
     stages {
