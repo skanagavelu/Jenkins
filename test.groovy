@@ -14,7 +14,7 @@ pipeline {
                     steps {
                         echo 'stage A started'
                         sleep 5
-                        greet()
+//                        greet()
 //                        script {
   //                         greet()
                            // error 'Test error'
