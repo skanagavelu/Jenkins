@@ -1,5 +1,5 @@
 node{
-//def common = load “common.groovy”
-//common.mycommoncode()
+def c=load “common.groovy”
+c.mycommoncode()
 println "Hello World!"
 }
