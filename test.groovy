@@ -42,6 +42,7 @@ pipeline {
          }
          stage('final stage sequential') {
              steps {
+                   echo 'final stage started'
 //                 script {
   //                   echo "The complete run!"
     //             }
