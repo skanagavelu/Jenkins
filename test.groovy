@@ -1,4 +1,8 @@
-evaluate(new File("common.groovy"))
+//evaluate(new File("common.groovy"))
+def script = new GroovyScriptEngine( '.' ).with {
+  loadScriptByName( 'common.groovy' )
+} 
+this.metaClass.mixin script
 
 pipeline {
     agent any
