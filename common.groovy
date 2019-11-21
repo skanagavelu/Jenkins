@@ -1,3 +1,4 @@
-def greet() {
-    println "Hello World!"
+def mycommoncode(){
+   println "Hello World!"
 }
+return this
