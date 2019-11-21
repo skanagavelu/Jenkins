@@ -14,11 +14,11 @@ pipeline {
                     steps {
                         echo 'stage A started'
                         sleep 5
-                        //greet()
-                        script {
-                           greet()
+                        greet()
+//                        script {
+  //                         greet()
                            // error 'Test error'
-                        }
+    //                    }
                         echo "RESULT: ${currentBuild.result}"
                         echo 'stage A Ended' //will not execute because of above sh return
                     }
