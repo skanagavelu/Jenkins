@@ -9,7 +9,7 @@ def rootDir = pwd()
     println("Current Directory: " + rootDir)
 
 
-def c = load “${rootDir}/common.groovy”
+def c = load "${rootDir}/common.groovy"
 c.mycommoncode()
 println "Hello World!"
 }
